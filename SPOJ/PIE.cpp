@@ -8,39 +8,22 @@ using namespace std;
 #define fastio std::ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
 #define PI pair<int,int>
 #define pi 3.14159265358979323846264338327950
-//vector<LL> cache(5005,0);
+//Need to use that big ass value or use acos(-1). Otherwise, it'll give WA.
 
-
+//So, it's a simple binary search problem. Highest value of the volume can be the volume of the largest pie, meaning only
+//one person can eat. Minimum value can be 0, i.e no one gets anything to eat. But if you use you'll raise an exception,
+//so just DBL_MIN, which is the minimum value that your system can represent.  
 int n,f;
-//vector< inter > a(1e4+2);
+
 vector< double > vol(1e4+2,0.0),sum(1e4+2,0.0);
 
 
-//stack< int > s;
-//char s[5001];
+
 bool mysorting(double v1, double v2)
 {
 	return v1 > v2;
 }
 
-/*inline double binarys(int start, int end)
-{
-	double value = sum[end];
-	double low = sum[start],high = vol[end];
-	double mid;
-	int i = 100;
-	while(i--)
-	{
-		mid = low + (high - low)/2;
-		if(mid <= value)
-			low = mid;
-		else
-			high = mid;
-	}
-	return low;
-
-
-}*/
 
 bool check(double mid)
 {
@@ -77,24 +60,7 @@ int main()
 				
 		}
 
-		//sort(vol.begin(),vol.begin()+n,mysorting);
-		// sum[0] = vol[0]/f;
-		// for(int i = 1; i < n; i++)
-		// 	sum[i] = sum[i-1] + vol[i]/f;
-		// for(int i = 0; i < n; i++)
-		// 	dbg(vol[i]);
-		// for(int i = 0; i < n; i++)
-		// 	dbg(sum[i]);
-
-		// double max_vol = -1.0,volume;
-
-		// for(int i = n-1; i>=1; i--)
-		// {
-		// 	volume = binarys(0,i);
-		// 	dbg(volume);
-		// 	max_vol = max(max_vol,volume);
-		// }
-		// max_vol = max(max_vol,sum[0]);
+		
 		double low = DBL_MIN, high = max_val,mid;
 		int i = 100;
 		while(i--)
