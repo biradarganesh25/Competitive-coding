@@ -1,4 +1,4 @@
 # Competitive-coding
 Contains various coding answers to questions from multiple online platforms. 
 
-I'm a student from RVCE, studying CSE. Occaisonaly, I bunk classes to code. :D
+Started this cause I got annoyed as fuck when trying to do some SPOJ Problems, cause they're clearly too lazy to maintain good classification of their problems.
