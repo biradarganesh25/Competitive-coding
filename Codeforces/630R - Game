@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+main()
+{
+	long long int n;
+	cin >> n;
+	int t=n%2? 1:2;
+	cout <<t;
+	return 0;
+}
