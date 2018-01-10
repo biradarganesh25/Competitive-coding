@@ -1,0 +1,11 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+#define FACTOR 1.000000011
+int main()
+{
+	
+	long long int n,k=2,sum=0;
+	cin >> n;
+	cout<<n/2520;
+}
