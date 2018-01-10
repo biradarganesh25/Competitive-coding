@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+main()
+{
+	long long int a,b,c,n,r;
+	scanf("%lld%lld%lld", &a,&b,&c);
+		if(c==0)
+		{
+			if(b==a)
+			printf("YES");
+			else
+			printf("NO");
+			exit(0);
+		}
+		n=(b-a)/c;
+		r=b-a-(n*c);
+	if(n>=0&&r==0)
+	{
+		printf("YES");
+	}
+	else
+	printf("NO");
+
+}
