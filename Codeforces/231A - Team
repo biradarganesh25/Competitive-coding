@@ -1,0 +1,26 @@
+//231A
+#include<stdio.h>
+struct op
+{
+	int a[3];
+}n[1000];
+
+int main()
+{
+	int t,i,ctr=0,ans=0;
+	scanf("%d",&t);
+	for(i=0;i<t;i++)
+	{
+		scanf("%d%d%d",&n[i].a[0],&n[i].a[1],&n[i].a[2]);
+		if(n[i].a[0]==1)
+		ctr++;
+		if(n[i].a[1]==1)
+		ctr++;
+		if(n[i].a[2]==1)
+		ctr++;
+		if(ctr>=2)
+		ans++;
+		ctr=0;
+	}
+	printf("%d",ans);
+}
