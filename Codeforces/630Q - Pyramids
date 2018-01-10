@@ -1,0 +1,16 @@
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+main()
+{
+	double l1,l2,l3;
+	cin >>l1>>l2>>l3;
+	l1=(sqrt(2)*(l1*l1*l1))/12;
+	l2=(sqrt(2)*(l2*l2*l2))/6;
+	l3=((5+sqrt(5))*(l3*l3*l3))/24;
+	cout<<setprecision(15)<<fixed;
+	cout << l1+l2+l3;
+	return 0;
+}
