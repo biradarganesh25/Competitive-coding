@@ -1,0 +1,11 @@
+#include<stdio.h>
+
+int main()
+{
+	int hh,mm,a;
+	scanf("%d:%d",&hh,&mm);
+	scanf("%d", &a);
+	hh=(hh+(a+mm)/60)%24;
+	mm=(a+mm)%60;
+	printf("%02d:%02d",hh,mm);
+}
