@@ -1,0 +1,22 @@
+//633A
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a,b,c,x,y;
+	cin>>a>>b>>c;
+	for(x=0;x<=c/a;x++)
+	{
+		for(y=0;y<=c/b;y++)
+		{
+			if(c==a*x+b*y)
+			{
+				cout<<"Yes";
+				return 0;
+			}
+		}
+	}
+	cout<<"No";
+	return 0;
+}
