@@ -1,0 +1,16 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+#define FACTOR 1.000000011
+int main()
+{
+	
+	double n,t;
+	double ans;
+	cin>>n>>t;
+	//ans=n*(pow(FACTOR,t+1)-1)/(FACTOR-1);
+	ans=n*pow(FACTOR,t);
+	cout<<setprecision(15) <<fixed;
+	cout<<ans;
+	return 0;
+}
