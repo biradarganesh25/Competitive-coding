@@ -1,0 +1,26 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+    int a[1001]={};
+    int n,t,ctr=0,sum=0; cin >> n;
+ 	sum=n;
+    while(n--)
+    {
+        cin>>t;
+        a[t]++;
+    }
+    sort(a,a+1001);
+    for(int i=1000;i>=1;i--)
+    {
+        if(a[i]!=0)
+        {
+           cout<<sum-a[i];
+           return 0;
+        }
+    }
+    //cout<<ctr;
+    return 0;
+}
