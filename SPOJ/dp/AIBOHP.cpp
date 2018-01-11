@@ -25,7 +25,7 @@ int dp(int i, int j) {
     if (cache[i][j] != -1) return cache[i][j];
     if (i >= j) return cache[i][j] = 0;
     if (str[i] == str[j]) return cache[i][j] = dp(i + 1, j - 1);
-    else return cache[i][j] = min(dp(i + 1, j), (i, j - 1)) + 1;
+    else return cache[i][j] = min(dp(i + 1, j), dp(i, j - 1)) + 1;
 }
 
 int main() {
