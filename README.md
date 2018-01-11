@@ -13,5 +13,7 @@ Topcoder : Haven't personally used this, but people say it's god level. So, if y
 
 Hackerearth : No clue. But I heard they scammed some guy who spent 7 days trying to find bugs in uber app and he found shit loads of security vulnerabilities. Uber promptly said thank you, didn't pay the guy and forgot about him. It was a 100$ thing, but maybe they have good problems, IDK.
 
+Codeforces : High quality problems with exhaustive test cases. One of the oldest and still active coding platform, many consider this as the real competitive coding platform. Many of the legends in the competitive programming scene are present here, and still active. To put it in short, if a person is able to solve more than 5 problems within the contest duration, it's safe to consider that person as an elite coder.
+
 If anyone wants to know where to start, here's a good resource : 
 https://www.codechef.com/certification/prepare#foundation
