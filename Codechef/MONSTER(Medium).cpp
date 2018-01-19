@@ -88,7 +88,7 @@ void solve() {
     REP(i, n) cin >> h[i];
     int q;
     cin >> q;
-    // Res[q] holds the nubmer of monsters that gets killed at a particular index i.
+    // Res[q] holds the number of monsters that gets killed at a particular query i.
     int res[q], queri[q][2];
     // set res array to zero
     MEM(res, 0);
