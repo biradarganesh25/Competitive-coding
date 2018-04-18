@@ -202,4 +202,6 @@ int main() {
  * Conclusion: Of course, I wasn't able to solve this problem during live contest, but I really enjoyed understanding the crux of this unofficial solution.
  *            The official author of the problem intented this to be solved in a completely different way(advanced, but not so good), this is a very good example of
  *            how different thinking can lead to a clean and elegant solution. And in many cases, this unofficial solution performs better than the official one.
+ * 
+ * Unofficial Editorial Link: https://discuss.codechef.com/questions/122723/chanoq-unofficial-editorial-chef-and-odd-queries-feb-long
  */
