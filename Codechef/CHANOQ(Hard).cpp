@@ -34,9 +34,9 @@ Solution description: I suggest you read this editorial on sqrt decomposition - 
                       For each query, we maintain a vector, which is used to store the index of ranges which has passed through odd number of points while traversing left and right pointers.(explained later)
                       Initially the vector would be empty and left = right = 0.
                       We now iterate through each of the N ranges.
-                      Conider the first range[1, 2], right is moved from 0 to 2 index, since there is a point 1 present in the M points, we push the value 1 to the vector, indicating the index of the N ranges.
+                      Conider the first range[1, 2], right is moved from 0 to 2 index, since there is a point 1 present in the M points, we push the value 1 to the vector, indicating the first range has odd number of points.
                       left pointer remains unchanged, as per the sqrt decomposition rules.
-                      Now the vector has 1 in it, indicating that range 1 has odd number of points in it. Next comes the clever part.
+                      Now the vector has [1] in it, indicating that range 1 has odd number of points in it. Next comes the clever part.
                       For the second range[2, 4], the right moves from 2 to 4, covering points 3, 4, since this is even number of points, the vector is unchanged.
                       left pointer is moved from 0 to 1, and it covers the point 1, and since this is odd number of pointer, vector is pushed with value 2, indicating that for second range, the left and right pointers moved odd number of times.
                       Now the vector has values [1, 2]. Let's analyse what this means.
